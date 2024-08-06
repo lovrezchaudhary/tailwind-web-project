@@ -6,7 +6,24 @@
     <title>Tailwind Project</title>
     <link href="output.css" rel="stylesheet">
 </head>
-<body class="bg-slate-600 grid place-content-center h-screen">
-    <h1 class="font-semibold text-2xl text-yellow-200">Hello Css</h1>
+<body class="">
+    <!-- navbar goes here -->
+     <nav class="w-full h-14 bg-indigo-300 flex justify-between px-4 md:px-5 items-center">
+        <div class="text-2xl font-bold text-indigo-800">Learn Skills</div>
+        <ul class="hidden md:flex font-semibold">
+            <li class="mx-[10px] cursor-pointer">Home</li>
+            <li class="mx-[10px] cursor-pointer">About Us</li>
+            <li class="mx-[10px] cursor-pointer">Contact Us</li>
+        </ul>
+        <div class="hidden md:block px-2 py-2 bg-indigo-700 text-white rounded font-bold cursor-pointer hover:bg-indigo-600">Login|SignUp</div>
+        <div class="md:hidden items-center">
+            <a class="text-4xl bg-indigo-700 text-white rounded-sm " href="#">&#8801;</a>
+        </div>
+     </nav>
+     <!-- Hero Section -->
+      <header class="w-full h-auto">
+        <img class="w-full hidden md:block" src="hero-image-lg.jpg" alt="hero-image">
+        <img class="w-full block md:hidden" src="hero-image-sm.jpg" alt="hero-image">
+      </header>
 </body>
 </html>
